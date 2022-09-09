@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define START "Last digit of"
+
 /**
  * main - Entry point
  *
@@ -18,13 +20,13 @@ int main(void)
 	lastdigit = n % 10;
 
 	if (lastdigit > 5)
-		printf("Last digit of %d is %d and is greater than 5\n", n, lastdigit);
+		printf("%s %d is %d and is greater than 5\n", START, n, lastdigit);
 
 	if (lastdigit == 0)
-		printf("Last digit of %d is %d and is 0\n", n, lastdigit);
+		printf("%s %d is %d and is 0\n", START, n, lastdigit);
 
 	if (lastdigit < 6 && lastdigit != 0)
-		printf("Last digit of %d is %d and is less than 6 and not0\n", n, lastdigit);
+		printf("%s %d is %d and is less than 6 and not 0\n", START, n, lastdigit);
 
 	return (0);
 }
