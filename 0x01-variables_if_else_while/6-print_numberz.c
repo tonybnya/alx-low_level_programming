@@ -14,7 +14,7 @@ int main(void)
 		putchar((i % 10) + '0');
 		i += 1;
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
