@@ -2,9 +2,10 @@
 
 /**
  * add -  adds two integers and return the result
- * @a @b - two integers
+ * @a - first number
+ * @b - second number
  *
- * Return - the addition of a and b
+ * Return - a + b
  */
 int add(int a, int b)
 {
