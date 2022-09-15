@@ -36,7 +36,7 @@ void fib(int limit)
 	printf("%ld, ", a);
 	printf("%ld, ", b);
 
-	while (counter < limit)
+	while (counter < (limit - 1))
 	{
 		printf("%ld, ", c);
 		a = b;
