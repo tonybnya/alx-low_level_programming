@@ -45,5 +45,5 @@ void fib(int limit)
 
 		counter += 1;
 	}
-	printf("\n");
+	printf("%ld\n", c);
 }
