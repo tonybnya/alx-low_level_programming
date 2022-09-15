@@ -27,23 +27,23 @@ int main(void)
  */
 void fib(int limit)
 {
-	long int a = 1;
-	long int b = 2;
-	long int c = a + b;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
+	unsigned long int c = a + b;
 
 	int counter = 2;
 
-	printf("%ld, ", a);
-	printf("%ld, ", b);
+	printf("%lu, ", a);
+	printf("%lu, ", b);
 
 	while (counter < (limit - 1))
 	{
-		printf("%ld, ", c);
+		printf("%lu, ", c);
 		a = b;
 		b = c;
 		c = a + b;
 
 		counter += 1;
 	}
-	printf("%ld\n", c);
+	printf("%lu\n", c);
 }
