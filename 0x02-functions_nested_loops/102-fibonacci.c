@@ -21,6 +21,8 @@ int main(void)
 /**
  * fib - print the first n numbers of the fibonacci sequence
  *
+ * @limit: integer as the count of the numbers in the sequence
+ *
  * Return: void
  */
 void fib(int limit)
@@ -31,12 +33,12 @@ void fib(int limit)
 
 	int counter = 2;
 
-	printf("%ld ", a);
-	printf("%ld ", b);
+	printf("%ld, ", a);
+	printf("%ld, ", b);
 
 	while (counter < limit)
 	{
-		printf("%ld ", c);
+		printf("%ld, ", c);
 		a = b;
 		b = c;
 		c = a + b;
