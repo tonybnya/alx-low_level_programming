@@ -2,39 +2,38 @@
 
 /**
  * main - Entry point
- * FizzBuzz test function
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	char c;
-	int start;
-	int end;
+	int i;
+	int j;
 
 	c = ' ';
-	start = 1;
-	end = 100;
+	i = 1;
+	j = 100;
 
-	while (start <= end)
+	while (i <= j)
 	{
-		if ((start % 3 == 0) && (start % 5 == 0))
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
 			printf("FizzBuzz%c", c);
 		}
-		else if (start % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("Fizz%c", c);
 		}
-		else if (start % 5 == 0)
+		else if (i % 5 == 0)
 		{
 			printf("Buzz%c", c);
 		}
 		else
 		{
-			printf("%d%c", start, c);
+			printf("%d%c", i, c);
 		}
 
-		start += 1;
+		i += 1;
 	}
 	printf("\n");
 
