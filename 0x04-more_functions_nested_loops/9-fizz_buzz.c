@@ -2,35 +2,38 @@
 
 /**
  * main - Entry point
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
 	int i;
 	int j;
 
-	c = ' ';
 	i = 1;
 	j = 100;
 
 	while (i <= j)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
+		if (i == 100)
 		{
-			printf("FizzBuzz%c", c);
+			printf("Buzz");
+		}
+		else if ((i % 3 == 0) && (i % 5 == 0))
+		{
+			printf("FizzBuzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			printf("Fizz%c", c);
+			printf("Fizz ");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("Buzz%c", c);
+			printf("Buzz ");
 		}
 		else
 		{
-			printf("%d%c", i, c);
+			printf("%d ", i);
 		}
 
 		i += 1;
