@@ -2,11 +2,10 @@
 
 /**
  * puts - print a string to the stdout
- *
  * @str - the given string
- *
  * Return: void
  */
+
 void _puts(char *str)
 {
 	int i;
