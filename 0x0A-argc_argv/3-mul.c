@@ -6,7 +6,7 @@
  * @argc: argument count
  * @arrv: argument vector
  *
- * Return: 0 if at least two arguments, 1 otherwise
+ * Return: 1 if no at least two arguments
  */
 int main(int argc, char *argv[])
 {
@@ -20,6 +20,4 @@ int main(int argc, char *argv[])
 
 	res = atoi(argv[1]) * atoi(argv[2]);
 	printf("%d\n", res);
-
-	return (0);
 }
