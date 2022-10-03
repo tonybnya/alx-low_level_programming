@@ -6,7 +6,7 @@
  * @argc: argument count
  * @arrv: argument vector
  *
- * Return: 0 if at least two integers arguments, 1 otherwise
+ * Return: 0 if at least two arguments, 1 otherwise
  */
 int main(int argc, char *argv[])
 {
@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 	if (argc < 3)
 	{
 		printf("Error\n");
-
 		return (1);
 	}
 
