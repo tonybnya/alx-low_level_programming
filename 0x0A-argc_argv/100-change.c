@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - prints the minimum number of coins to make change
- * for an amount of money
+ * main - prints the number of coins to make change or an amount of money
  *
  * @argc: argument count
  * @argv: argument vector
@@ -27,19 +26,19 @@ int main(int argc, char *argv[])
 		{
 			cents -= 25;
 		}
-		if (cents >= 10)
+		else if (cents >= 10)
 		{
 			cents -= 10;
 		}
-		if (cents >= 5)
+		else if (cents >= 5)
 		{
 			cents -= 5;
 		}
-		if (cents >= 2)
+		else if (cents >= 2)
 		{
 			cents -= 2;
 		}
-		if (cents >= 1)
+		else if (cents >= 1)
 		{
 			cents -= 1;
 		}
