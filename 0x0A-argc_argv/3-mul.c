@@ -4,13 +4,13 @@
  * main - prints the result of the multiplication
  *
  * @argc: argument count
- * @arrv: argument vector
+ * @argv: argument vector
  *
  * Return: 0, if at least 3 arguments, 1 otherwise
  */
 int main(int argc, char *argv[])
 {
-	int n1, n2, res;
+	int res;
 
 	if (argc != 3)
 	{
@@ -18,9 +18,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	n1 = atoi(argv[1]);
-	n2 = atoi(argv[2]);
-	res = n1 * n2;
+	res = atoi(argv[1]) * atoi(argv[2]);
 
 	printf("%d\n", res);
 
