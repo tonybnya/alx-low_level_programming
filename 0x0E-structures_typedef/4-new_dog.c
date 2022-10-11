@@ -23,13 +23,13 @@ int _strlen(char *str)
 }
 
 /**
- * _strcpy - copies strings
+ * _strcopy - copies strings
  * @dest: destination copy
  * @src: source string
  *
  * Return: pointer to dest
  */
-char *_strcpy(char *dest, char *src)
+char *_strcopy(char *dest, char *src)
 {
 	int index = 0;
 
