@@ -2,10 +2,9 @@
 
 /**
  * print_list - prints all the elements of a list_t list
+ * @h: the given list_t list
  *
- * @h: a list_t list
- *
- * Return: number of nodes of
+ * Return: number of nodes of h
  */
 size_t print_list(const list_t *h)
 {
