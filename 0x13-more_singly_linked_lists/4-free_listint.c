@@ -2,7 +2,9 @@
 
 /**
  * free_listint - frees a listint_t list
- * @head: pointer to the 1st node
+ * @head: pointer to the first node
+ *
+ * Return: nothing
  */
 void free_listint(listint_t *head)
 {
@@ -13,5 +15,5 @@ void free_listint(listint_t *head)
 		itr = head->next;
 		free(head);
 		head = itr;
-	}	
+	}
 }
