@@ -7,12 +7,12 @@
  * @n: integer as content of the new node
  *
  * Return: NULL if failure, otherwise the address of the new node
- * if it to add at the index idx, return NULL
+ * 	   NULL, if it is not possible to add at the index idx
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *node, *temp = *head;
 	unsigned int index;
+	listint_t *node, *temp = *head;
 
 	node = malloc(sizeof(listint_t));
 	if (node == NULL)
@@ -20,8 +20,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	node->n = n;
 
-	index = 0;
-	for (index = 0; index < idx - 1; index++)
+	for (index = 0; index < (idx - 1); index++)
 	{
 		if (temp == NULL || temp->next == NULL)
 			return (NULL);
