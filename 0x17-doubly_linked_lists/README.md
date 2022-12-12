@@ -254,10 +254,6 @@ julien@ubuntu:~/0x17. Doubly linked lists$
 - where ```index``` is the index of the node, starting from ```0```
 - if the node does not exist, return ```NULL```
 
-
-
 ```sh
 
 ```
-
-
