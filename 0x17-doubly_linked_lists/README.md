@@ -191,8 +191,6 @@ julien@ubuntu:~/0x17. Doubly linked lists$
    Write a function that frees a ```dlistint_t``` list.
 - Prototype: ```void free_dlistint(dlistint_t *head);```
 
-
-
 ```sh
 julien@ubuntu:~/0x17. Doubly linked lists$ cat 4-main.c
 #include <stdlib.h>
