@@ -247,3 +247,17 @@ julien@ubuntu:~/0x17. Doubly linked lists$ valgrind ./e
 ==4197== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 julien@ubuntu:~/0x17. Doubly linked lists$ 
 ```
+
+5. Get node at index
+   Write a function that returns the nth node of a ```dlistint_t`` linked list.
+- Prototype: ```dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);```
+- where ```index``` is the index of the node, starting from ```0```
+- if the node does not exist, return ```NULL```
+
+
+
+```sh
+
+```
+
+
