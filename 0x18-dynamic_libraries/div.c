@@ -9,8 +9,7 @@
  */
 int div(int a, int b)
 {
-        if (b == 0)
-                return (-1);
-
-        return ((int)(a / b));
+	a = 0;
+	b = 0;
+        return (a + b);
 }
