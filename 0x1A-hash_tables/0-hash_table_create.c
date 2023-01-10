@@ -20,11 +20,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (array == NULL)
 		return (NULL);
 
-	ht->size = size;
-	ht->array = array;
-
 	for (i = 0; i < size; i++)
 		ht->array[i] = NULL;
+
+	ht->size = size;
+	ht->array = array;
 
 	return (ht);
 }
