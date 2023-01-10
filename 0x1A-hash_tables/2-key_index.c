@@ -10,14 +10,14 @@
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-        unsigned long int index;
+	unsigned long int index;
 
-        index = 0;
-        while (*key)
-        {
-                index += *key;
-                key++;
-        }
+	index = 0;
+	while (*key)
+	{
+		index += *key;
+		key++;
+	}
 
-        return (index % size);
+	return (index % size);
 }
